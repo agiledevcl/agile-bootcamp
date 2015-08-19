@@ -17,6 +17,7 @@
 		<resource>src/main/resources/hibernate.cfg.xml</resource>
 		<resource>src/main/resources/claveunica.properties</resource>
 		<resource>src/main/resources/jdbc.properties</resource>
+		<resource>src/main/resources/log4j.properties</resource>
 		<resource>src/main/webapp/WEB-INF/web.xml</resource>
 		<resource>src/main/webapp/WEB-INF/dispatcher-servlet.xml</resource>
 		<resource>src/main/webapp/WEB-INF/spring-security.xml</resource>

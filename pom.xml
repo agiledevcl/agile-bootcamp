@@ -4,6 +4,6 @@
  
   <groupId>cl.agile.archetypes</groupId>
   <artifactId>agile-bootcamp</artifactId>
-  <version>1.4</version>
+  <version>2.0</version>
   <packaging>jar</packaging>
 </project>

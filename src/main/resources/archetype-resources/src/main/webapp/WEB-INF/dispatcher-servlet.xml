@@ -15,6 +15,15 @@
         http://www.springframework.org/schema/context/spring-context-4.0.xsd">
   <context:annotation-config />
   <context:component-scan base-package="${groupId}.core" />
+  <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+   <property name="prefix">
+   <value>/WEB-INF/views/</value>
+   </property>
+   <property name="suffix">
+   <value>.jsp</value>
+   </property>
+   <property name="cache" value="false" />
+  </bean>
 <!-- JDBC Configuration -->
   <bean id="propertyConfigurer"
         class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer"
@@ -31,6 +40,10 @@
     <property name="maxIdleTime" value="${c3p0.maxIdleTime}" />        
     <property name="idleConnectionTestPeriod" value="30"/>            
  </bean>
+
+ <mvc:resources mapping="/resources/**" location="/resources/" />
+ <mvc:resources mapping="/templates/**" location="/WEB-INF/views/templates/" /> 
+ <mvc:annotation-driven />
 <!-- Hibernate Configuration -->
   <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
     <property name="dataSource" ref="dataSource" />
