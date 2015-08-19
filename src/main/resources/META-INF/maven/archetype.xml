@@ -1,0 +1,29 @@
+<archetype xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype/1.0.0 http://maven.apache.org/xsd/archetype-1.0.0.xsd">
+	<id>agile-bootcamp</id>
+	<allowPartial>true</allowPartial>	
+	<sources>
+		<source>src/main/java/utils/InformacionPersonal.java</source>
+		<source>src/main/java/core/controller/ClaveUnicaOAuth2Controller.java</source>
+		<source>src/main/java/core/controller/SystemController.java</source>
+		<source>src/main/java/core/service/PersonService.java</source>
+		<source>src/main/java/core/service/PersonServiceImpl.java</source>
+		<source>src/main/java/core/dao/PersonDAO.java</source>
+		<source>src/main/java/core/dao/PersonDAOImpl.java</source>
+		<source>src/main/java/core/form/Person.java</source>
+		<source>src/main/java/core/form/Person.java</source>
+	</sources>
+	<resources>
+		<resource>src/main/resources/hibernate.cfg.xml</resource>
+		<resource>src/main/resources/claveunica.properties</resource>
+		<resource>src/main/resources/jdbc.properties</resource>
+		<resource>src/main/webapp/WEB-INF/web.xml</resource>
+		<resource>src/main/webapp/WEB-INF/dispatcher-servlet.xml</resource>
+		<resource>src/main/webapp/WEB-INF/spring-security.xml</resource>
+		<resource>src/main/webapp/WEB-INF/views/index.jsp</resource>		
+		<resource>src/main/webapp/WEB-INF/views/formulario.jsp</resource>		
+		<resource>src/main/webapp/WEB-INF/views/imprimirForm.jsp</resource>		
+		<resource>src/main/webapp/WEB-INF/views/login.jsp</resource>		
+		<resource>src/main/webapp/WEB-INF/views/system_home.jsp</resource>		
+	</resources>
+</archetype>
